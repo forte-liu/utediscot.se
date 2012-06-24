@@ -1,0 +1,30 @@
+$(window).load(function() {
+    var current = '#start';
+    $('.main article').addClass('invisible');
+
+    if(document.location.hash) {
+        current = document.location.hash;
+    }
+
+    $(current).fadeIn('fast');
+
+    $('#start_images').nivoSlider({
+        effect: 'boxRandom',
+        pauseTime: 8000, // How long each slide will show
+        animSpeed: 1000,
+        directionNav: false, // Next & Prev navigation
+        controlNav: false // 1,2,3... navigation
+    });
+
+    $('nav a').click(function() {
+        var next = '#' + $(this).attr('class');
+        if(current === next) {
+            return false;
+        }
+
+        $(current).fadeOut('fast', function(){
+            $(next).fadeIn('slow');
+        });
+        current = next;
+    });
+});
