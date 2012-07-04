@@ -22,6 +22,19 @@ aside {
     top: 190px;
 }
 
+.logos {
+    width: 924px;
+    margin: auto;
+}
+
+.logos .left {
+    float: left;
+}
+
+.logos .right {
+    float: right;
+}
+
 .main {
     width: 924px;
     min-height: 620px;
