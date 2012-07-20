@@ -1,23 +1,11 @@
-$(window).load(function() {
-    var current = '#start';
-    $('.main article').addClass('invisible');
-
-    if(document.location.hash) {
-        current = document.location.hash;
+$(function() {
+    function getHash() {
+        return document.location.hash ? document.location.hash : '#start';
     }
 
-    $(current).fadeIn('fast');
+    var current = getHash();
 
-    $('#start_images').nivoSlider({
-        effect: 'boxRandom',
-        pauseTime: 8000, // How long each slide will show
-        animSpeed: 1000,
-        directionNav: false, // Next & Prev navigation
-        controlNav: false // 1,2,3... navigation
-    });
-
-    $('nav a').click(function() {
-        var next = '#' + $(this).attr('class');
+    function changePage(next) {
         if(current === next) {
             return false;
         }
@@ -26,5 +14,16 @@ $(window).load(function() {
             $(next).fadeIn('slow');
         });
         current = next;
+    }
+    $('.main article').addClass('invisible');
+
+    $('nav a').click(function() {
+        document.location.hash = '#' + $(this).attr('class');
     });
+
+    $(window).hashchange(function(){
+        changePage(getHash());
+    });
+
+    $(current).fadeIn('fast');
 });
