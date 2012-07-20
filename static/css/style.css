@@ -5,8 +5,8 @@ body {
 }
 
 header {
-    width: 924px;
-
+    width: 924px; /* <- This is why one should think a bit about chosing nice
+                        values when doing mockups in Photoshop...  */
     margin: -200px auto 0;
 }
 
@@ -25,6 +25,7 @@ aside {
 .logos {
     width: 924px;
     margin: auto;
+    opacity: 0.8;
 }
 
 .logos .left {
@@ -37,7 +38,7 @@ aside {
 
 .main {
     width: 924px;
-    min-height: 620px;
+    min-height: 570px;
 
     margin: auto;
     background: #fff;
