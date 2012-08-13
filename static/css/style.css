@@ -72,6 +72,18 @@ a {
     line-height: 0.5em;
 }
 
+.facebook {
+    background: no-repeat url("../img/facebook.png");
+    height: 50px;
+    padding-left: 60px;
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+
+.facebook a {
+    text-decoration: none;
+}
+
 strong {
     font-size: 30px;
     font-weight: 700;
