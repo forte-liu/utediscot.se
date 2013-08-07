@@ -14,6 +14,10 @@ aside {
     margin-bottom: 60px;
 }
 
+#start_images {
+    margin-top: 60px;
+}
+
 .logo {
     position: relative;
     z-index: 1000;
