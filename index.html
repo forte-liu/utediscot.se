@@ -5,157 +5,129 @@
 
     <meta charset="utf-8" />
 
-    <link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+    <link type="text/css" href="static/lib/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="static/css/style.css" />
 
-    <link rel="stylesheet" href="static/css/nivo-slider.css" type="text/css" media="screen" />
+
     <link rel="shortcut icon" href="static/img/favicon.ico" />
 
     <script type="text/javascript" src="static/js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="static/js/jquery.nivo.slider.min.js"></script>
     <script type="text/javascript" src="static/js/jquery.ba-hashchange.min.js"></script>
 
-    <script type="text/javascript" src="static/js/slider.js"></script>
+    <script type="text/javascript" src="static/lib/jquery.parallax-1.1.3.js"></script>
     <script type="text/javascript" src="static/js/index.js"></script>
-		<script type="text/javascript">
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-33922101-1']);
-		  _gaq.push(['_setDomainName', 'utediscot.se']);
-		  _gaq.push(['_trackPageview']);
+	<script type="text/javascript">
 
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-33922101-1']);
+	  _gaq.push(['_setDomainName', 'utediscot.se']);
+	  _gaq.push(['_trackPageview']);
 
-		</script>
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
 </head>
-<body>
-    <header>
-        <img class="logo" src="static/img/logo.png" alt="LinTek &amp; Fortes Utedisco 2013">
-        <div id="start_images">
-            <img src="static/img/start1.jpg" alt="">
-            <img src="static/img/start2.jpg" alt="" class="invisible">
-            <img src="static/img/start3.jpg" alt="" class="invisible">
-            <img src="static/img/start4.jpg" alt="" class="invisible">
-            <img src="static/img/start5.jpg" alt="" class="invisible">
-        </div>
-        <nav>
-            <a href="#start" class="start">Start</a>
-            <a href="#biljetter" class="biljetter">Biljetter</a>
-            <a href="#info" class="info">Info</a>
-            <a href="#jobba" class="jobba">Jobba</a>
-            <a href="#kontakt" class="kontakt">Kontakt</a>
-        </nav>
-    </header>
 
-    <div class="main">
-        <article id="start">
-            <h1>Såklart n0llan ska gå på Utedisco!</h1>
-            <p>
-                <span class="anfang">U</span>niversitetets egna ljud, ljus och DJ-förening <b>Forte</b> levererar teknik till de allra flesta av årets studentfester. Tillsammans med <b>LinTek</b>, Linköpings Teknologers Studentkår, presenterar vi stolt <b>LinTek och Fortes Utedisco</b>.
-            </p>
-            <p>
-                Vi släpar ut en galen mängd ljud och ljusutrustning till Blå havet på Campus Valla och bygger ett fett dansgolv som n0llan, n0llans faddar och alla andra studenter kan svänga sina lurviga på. Det kan helt enkelt inte bli något annat än en av de absolut största höjdpunkterna bland Linköpings studentfester!
-            </p>
-            <p>
-                Visst finns det gott om discon och annat att gå på under n0lle-p, men vi är säkra på att inget av dem riktigt når upp till samma nivå. Så se till att hålla ögonen öppna när biljetterna släpps. Vi tror inte att du kommer bli besviken!
-            </p>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-            <footer>
-                <p>
-                    <b>Lördag den 31 augusti</b><br>
-                    Blå havet, utanför Kårallen, Universitetet<br>
-                    80 kr, biljetter säljs av ditt fadderi
-                </p>
-            </footer>
-
-            <div class="facebook">
-                <a href="https://www.facebook.com/events/1401873996697405/">Kolla in Utediscot på Facebook</a>
+    <section id="start" class="jumbotron">
+        <div class="container-fluid transparent-bg">
+            <div class="container">
+                <img class="logo" src="static/img/logo.png" alt="LinTek &amp; Fortes Utedisco 2013">
             </div>
-        </article>
+        </div>
+        <header id="top">
+            <nav>
+                <a href="#info" class="info">Info</a>
+                <a href="#biljetter" class="biljetter">Biljetter</a>
+                <a href="#jobba" class="jobba">Jobba</a>
+                <a href="#kontakt" class="kontakt">Kontakt</a>
+            </nav>
+        </header>
+    </section>
 
-        <article id="biljetter">
-            <h1>Biljetter</h1>
-            <p>
-                Biljetterna kommer främst att säljas av de fadderier och andra föreningar som tar emot n0llan. Vi har erbjudit alla fadderier förköp till deras n0llan, och i den mån biljetterna räcker även till faddrar. Det finns gott om fadderier som säljer biljetter, hör efter med dina faddrar om ditt fadderi är ett av dem.
-            </p>
-            <p>
-                De biljetter som blir kvar kommer att säljas i Colloseum, det stora torget i C-huset fr.o.m måndag 26 augusti. Mer information kommer på hemsidan och på <a href="https://www.facebook.com/events/1401873996697405/" title="LinTek &amp; Fortes Utedisco 2013" target="_blank">Facebook</a> när detta blir aktuellt.
-            </p>
-            <p>
-                Biljetterna kostar 80 kr. Ett finfint märke kan även köpas för 20 kr. Köp båda på samma gång för en hundring så slipper du växla!
-            </p>
-        </article>
+    <section id="info" class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h1>Såklart du ska gå på Utediscot</h1>
+                <p>
+                    Forte är en studentförening vid Linköpings universitet som jobbar med
+                    ljud, ljus och DJ. Vi levererar teknik till de allra flesta av
+                    Linköpings större studentfester, och har exempelvis levererat teknik
+                    till artister som Maskinen, Danko Jones, Den Svenska Björnstammen,
+                    Petter, Björn Rosenström, med flera.
+                </p>
+            </div>
+        </div>
+    </section>
 
-        <article id="info">
-            <h1>Information</h1>
-            <h2>Praktiska saker</h2>
-            <p>
-                LinTek och Fortes Utedisco 2013 äger rum lördagen den 31 augusti på Blå havet, Campus Valla, Linköping <a href="http://bit.ly/O36B3B" title="Blå Havet">(karta)</a>. Utediscot drar igång kl 22:00 och håller på fram till kl 03:00.
-            </p>
-
-            <h2>Arrangörerna</h2>
-            <p>
-                <b>Forte</b> är en ljud, ljus och DJ-förening som levererar tekniken till de allra flesta stora studentfesterna på Universitetet. En gång om året är Forte med och arrangerar en egen fest - Utediscot, och naturligtvis sparas det då inte på krutet! Vi beräknar att det kommer att finnas ungefär <b>18&nbsp;000&nbsp;W</b> strobe, <b>40&nbsp;000&nbsp;W</b> övrigt ljus samt rejält gott om ljud på dansgolvet under kvällen. Naturligtvis kommer det även att spelas rikigt grym musik!
-
-                <aside>
-                    <a href="http://forte.studorg.liu.se/">forte.studorg.liu.se</a>
-                </aside>
-            </p>
-
-            <p>
-                <b>LinTek</b>, Linköpings Teknologers Studentkår, är din ständiga kompis i studentlivet. Vi arbetar för att du ska få en så bra utbildning som möjligt, genom att till exempel ge dig möjlighet att påverka din utbildning och knyta värdefulla kontakter med näringslivet. Under Utediscot ser vi till att det finns gott om öl, cider och alkoholfria alternativ att köpa, och så att nödvändiga saker som toaletter och tält finns området. Totalt kommer det finnas över <b>1&nbsp;700&nbsp;liter</b> dryck (och väldigt många goda hamburgare) att köpa.
-
-                <aside>
-                    <a href="http://lintek.liu.se/">lintek.liu.se</a>
-                </aside>
-            </p>
-
-            <p>
-                Designen av utediscots finfina märke och logo är skapade av David&nbsp;Stenbeck. Hemsidan är gjord av Niclas&nbsp;Olofsson, som även tagit bilderna från Utediscot 2011 ovan.
-            </p>
-        </article>
-
-        <article id="jobba">
-            <h1>Sugen på att jobba under årets Utedisco?</h1>
-            <p>
-                Så klart du är! Vi behöver ett antal personer som jobbar under kvällen den 31 augusti. Uppgifterna varierar under kvällen och man får bland annat stå i bar, vid entréer samt servera mat. Det finns inga krav på tidigare erfarenheter, det du behöver kunna lär du dig under kvällen.
-            </p>
-
-            <p>
-                Vad får man för besväret? Förutom Forte och Linteks eviga tacksamhet, en kul erfarenhet av att jobba på en stor fest och en rolig kväll erbjuder vi <b>biljett till München Hoben 2013</b> för alla jobbare! Detta är också ett ypperligt tillfälle för er som funderar på att engagera er inom Forte eller Lintek senare under året att få en första kontakt med oss.
-            </p>
-
-            <p>
-                Är du sugen på att hjälpa till och därmed göra årets absolut grymmaste fest möjlig? Skicka ett mail till <a href="mailto:sa@lintek.liu.se">sa@lintek.liu.se</a> med namn och kontaktuppgifter senast den 26 augusti, så återkommer vi snarast med mer info!
-            </p>
-        </article>
-
-        <article id="kontakt">
-            <h1>Kontakt</h1>
-            <p>
-                Funderar du på något? Hör av dig till någon av oss!
-            </p>
-            <p>
-                <h2>Allmänna frågor</h2>
-                <b>Arvid Söderström</b><br>
-                Studiesocialt Ansvarig, LinTek
-                <p><a href="mailto:sa@lintek.liu.se">sa@lintek.liu.se</a></p>
-            </p>
-            <p>
+    <aside id="bg-biljetter"></aside>
+    <section id="info" class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
                 <h2>Biljetter</h2>
-                <b>Mattias Nilsson</b><br>
-                Ordförande, Forte<br>
-                <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#111;&#114;&#100;&#102;&#64;&#102;&#111;&#114;&#116;&#101;&#46;&#115;&#116;&#117;&#100;&#111;&#114;&#103;&#46;&#108;&#105;&#117;&#46;&#115;&#101;">&#111;&#114;&#100;&#102;&#64;&#102;&#111;&#114;&#116;&#101;&#46;&#115;&#116;&#117;&#100;&#111;&#114;&#103;&#46;&#108;&#105;&#117;&#46;&#115;&#101;</a></p>
-            </p>
-        </article>
-    </div>
-    <div class="logos">
-        <a href="http://lintek.liu.se/"><img class="left" src="static/img/lintek.png"></a>
-        <a href="http://forte.studorg.liu.se/"><img class="right" src="static/img/forte.png"></a>
-    </div>
+                <p>
+                    Forte är en studentförening vid Linköpings universitet som jobbar med
+                    ljud, ljus och DJ. Vi levererar teknik till de allra flesta av
+                    Linköpings större studentfester, och har exempelvis levererat teknik
+                    till artister som Maskinen, Danko Jones, Den Svenska Björnstammen,
+                    Petter, Björn Rosenström, med flera.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <aside id="bg-jobba"></aside>
+    <section id="info" class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h2>Jobba</h2>
+                <p>
+                    Forte är en studentförening vid Linköpings universitet som jobbar med
+                    ljud, ljus och DJ. Vi levererar teknik till de allra flesta av
+                    Linköpings större studentfester, och har exempelvis levererat teknik
+                    till artister som Maskinen, Danko Jones, Den Svenska Björnstammen,
+                    Petter, Björn Rosenström, med flera.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <aside id="bg-kontakt"></aside>
+    <section id="info" class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h2>Kontakt</h2>
+                <p>
+                    Forte är en studentförening vid Linköpings universitet som jobbar med
+                    ljud, ljus och DJ. Vi levererar teknik till de allra flesta av
+                    Linköpings större studentfester, och har exempelvis levererat teknik
+                    till artister som Maskinen, Danko Jones, Den Svenska Björnstammen,
+                    Petter, Björn Rosenström, med flera.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="bg-footer">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="col-lg-6 pull-left">
+                    Produktion: <a href="http://niclasolofsson.se/">niclasolofsson.se</a>
+                </div>
+                <div class="col-lg-6 pull-right">
+                    Logo: Marcus Stenbeck
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

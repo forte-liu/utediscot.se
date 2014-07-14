@@ -1,0 +1,128 @@
+
+@bgBaseURL: "../../static/img";
+
+@offwhite: #dadada;
+@offblack: #333333;
+
+body {
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+aside {
+    margin-bottom: 60px;
+}
+
+.logo {
+    position: relative;
+    z-index: 1000;
+
+    left: -125px;
+    top: 190px;
+}
+
+.logos {
+    width: 924px;
+    margin: auto;
+    opacity: 0.8;
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+}
+
+.invisible {
+    display: none;
+}
+
+a {
+    color: #000;
+}
+
+.facebook {
+    background: no-repeat url("../img/facebook.png");
+    height: 50px;
+    padding-left: 60px;
+    padding-top: 10px;
+    font-size: 1.2em;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+nav {
+    height: 40px;
+    padding-top: 10px;
+
+    background-color: #000;
+    text-align: center;
+
+    a {
+        padding: 0 40px;
+
+        color: #fff;
+
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+
+a:hover {
+    color: #faa61a;
+}
+
+h1, h2 {
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 {
+    font-size: 45pt;
+}
+
+.bg-image(@image) {
+    background-image: url("@{bgBaseURL}/@{image}");
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+
+section#start {
+    padding: 230px 0 0;
+
+    .bg-image('start.jpg');
+    height: 800px;
+}
+
+aside#bg-biljetter {
+    .bg-image('1.jpg');
+    height: 500px;
+    background-position: 60%;
+}
+
+aside#bg-jobba {
+    .bg-image('2.jpg');
+    height: 500px;
+    background-position: 80%;
+}
+
+aside#bg-kontakt {
+    .bg-image('3.jpg');
+    height: 500px;
+    background-position: 50%;
+}
+
+section.container {
+    color: @offwhite;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}

@@ -1,124 +1,110 @@
-
 body {
-    background-color: #000;
-    font-family: 'Asap', sans-serif;
+  background-color: #000;
+  font-family: 'Open Sans', sans-serif;
 }
-
-header {
-    width: 924px; /* <- This is why one should think a bit about chosing nice
-                        values when doing mockups in Photoshop...  */
-    margin: -200px auto 0;
-}
-
 aside {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
-
-#start_images {
-    margin-top: 60px;
-}
-
 .logo {
-    position: relative;
-    z-index: 1000;
-
-    left: -125px;
-    top: 190px;
+  position: relative;
+  z-index: 1000;
+  left: -125px;
+  top: 190px;
 }
-
 .logos {
-    width: 924px;
-    margin: auto;
-    opacity: 0.8;
+  width: 924px;
+  margin: auto;
+  opacity: 0.8;
 }
-
 .logos .left {
-    float: left;
+  float: left;
 }
-
 .logos .right {
-    float: right;
+  float: right;
 }
-
-.main {
-    width: 924px;
-    min-height: 570px;
-
-    margin: auto;
-    background: #fff;
-    color: #333;
-    border-radius: 0 0 15px 15px;
-}
-
-.main article {
-    padding: 20px;
-
-    font-size: 20px;
-}
-
-.main article footer {
-    margin-top: 70px;
-
-    font-size: 1.3em;
-}
-
 .invisible {
-    display: none;
+  display: none;
 }
-
 a {
-    color: #000;
+  color: #000;
 }
-
-.anfang {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 0.5em;
-}
-
 .facebook {
-    background: no-repeat url("../img/facebook.png");
-    height: 50px;
-    padding-left: 60px;
-    padding-top: 10px;
-    font-size: 1.2em;
+  background: no-repeat url("../img/facebook.png");
+  height: 50px;
+  padding-left: 60px;
+  padding-top: 10px;
+  font-size: 1.2em;
 }
-
 .facebook a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-strong {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 0.5em;
-}
-
 nav {
-    height: 40px;
-    padding-top: 10px;
-
-    background-color: #000;
-    text-align: center;
+  height: 40px;
+  padding-top: 10px;
+  background-color: #000;
+  text-align: center;
 }
-
 nav a {
-    padding: 0 40px;
-
-    color: #fff;
-
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
+  padding: 0 40px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
 }
-
 a:hover {
-    color: #faa61a;
+  color: #faa61a;
 }
-
+h1,
+h2 {
+  font-weight: 300;
+  text-align: center;
+}
 h1 {
-    margin: 0;
-
-    font-size: 45px;
+  font-size: 45pt;
+}
+section#start {
+  padding: 230px 0 0;
+  background-image: url("../../static/img/start.jpg");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 800px;
+}
+aside#bg-biljetter {
+  background-image: url("../../static/img/1.jpg");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 500px;
+  background-position: 60%;
+}
+aside#bg-jobba {
+  background-image: url("../../static/img/2.jpg");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 500px;
+  background-position: 80%;
+}
+aside#bg-kontakt {
+  background-image: url("../../static/img/3.jpg");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 500px;
+  background-position: 50%;
+}
+section.container {
+  color: #dadada;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
