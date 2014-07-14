@@ -5,20 +5,13 @@
 @offblack: #333333;
 
 body {
-    background-color: #000;
+    background-image: url("@{bgBaseURL}/bg.jpg");
+    font-size: 13pt;
     font-family: 'Open Sans', sans-serif;
 }
 
 aside {
     margin-bottom: 60px;
-}
-
-.logo {
-    position: relative;
-    z-index: 1000;
-
-    left: -125px;
-    top: 190px;
 }
 
 .logos {
@@ -55,35 +48,48 @@ a {
     }
 }
 
-nav {
-    height: 40px;
-    padding-top: 10px;
+section.jumbotron .container {
+    padding: 40px;
 
-    background-color: #000;
-    text-align: center;
-
-    a {
-        padding: 0 40px;
-
-        color: #fff;
-
-        font-size: 24px;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-decoration: none;
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
+
+    nav {
+        height: 40px;
+        padding-top: 10px;
+
+        text-align: center;
+
+        a {
+            padding: 0 40px;
+
+            font-size: 24px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            color: #faa61a;
+        }
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 a:hover {
     color: #faa61a;
 }
 
-h1, h2 {
+ h2 {
     font-weight: 300;
     text-align: center;
-}
-
-h1 {
+    margin-bottom: 50px;
     font-size: 45pt;
 }
 
@@ -96,11 +102,37 @@ h1 {
     left: 0;
 }
 
+.fixed {
+    background-attachment: fixed;
+}
+
+.transparent-bg {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.center {
+    text-align: center;
+}
+
+section.container {
+    color: @offwhite;
+    padding: 80px 0;
+    margin-bottom: 40px;
+
+    p {
+        margin: 30px 0;
+    }
+
+    .row {
+        margin: 0;
+    }
+}
+
 section#start {
     padding: 230px 0 0;
 
     .bg-image('start.jpg');
-    height: 800px;
+    height: 900px;
 }
 
 aside#bg-biljetter {
@@ -121,8 +153,10 @@ aside#bg-kontakt {
     background-position: 50%;
 }
 
-section.container {
+footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
     color: @offwhite;
-    margin-top: 150px;
-    margin-bottom: 150px;
+
 }
+

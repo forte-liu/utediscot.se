@@ -1,15 +1,10 @@
 body {
-  background-color: #000;
+  background-image: url("../../static/img/bg.jpg");
+  font-size: 13pt;
   font-family: 'Open Sans', sans-serif;
 }
 aside {
   margin-bottom: 60px;
-}
-.logo {
-  position: relative;
-  z-index: 1000;
-  left: -125px;
-  top: 190px;
 }
 .logos {
   width: 924px;
@@ -38,30 +33,60 @@ a {
 .facebook a {
   text-decoration: none;
 }
-nav {
+section.jumbotron .container {
+  padding: 40px;
+}
+section.jumbotron .container .logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+section.jumbotron .container nav {
   height: 40px;
   padding-top: 10px;
-  background-color: #000;
   text-align: center;
 }
-nav a {
+section.jumbotron .container nav a {
   padding: 0 40px;
-  color: #fff;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: uppercase;
+}
+section.jumbotron .container nav a:hover {
+  color: #faa61a;
+}
+a {
+  color: #fff;
   text-decoration: none;
 }
 a:hover {
   color: #faa61a;
 }
-h1,
 h2 {
   font-weight: 300;
   text-align: center;
-}
-h1 {
+  margin-bottom: 50px;
   font-size: 45pt;
+}
+.fixed {
+  background-attachment: fixed;
+}
+.transparent-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.center {
+  text-align: center;
+}
+section.container {
+  color: #dadada;
+  padding: 80px 0;
+  margin-bottom: 40px;
+}
+section.container p {
+  margin: 30px 0;
+}
+section.container .row {
+  margin: 0;
 }
 section#start {
   padding: 230px 0 0;
@@ -71,7 +96,7 @@ section#start {
   background-size: cover;
   top: 0;
   left: 0;
-  height: 800px;
+  height: 900px;
 }
 aside#bg-biljetter {
   background-image: url("../../static/img/1.jpg");
@@ -103,8 +128,8 @@ aside#bg-kontakt {
   height: 500px;
   background-position: 50%;
 }
-section.container {
+footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
   color: #dadada;
-  margin-top: 150px;
-  margin-bottom: 150px;
 }

@@ -29,12 +29,12 @@
 // });
 
 var parallaxify = function() {
-    // if (!document.createTouch) {
-    //     $('#start').addClass('fixed').parallax("50%", 0.4);
-    //     $('#bg-biljetter').addClass('fixed').parallax("50%", 0.4);
-    //     $('#bg-jobba').addClass('fixed').parallax("50%", 0.4);
-    //     $('#bg-kontakt').addClass('fixed').parallax("50%", 0.4);
-    // }
+    if (!document.createTouch) {
+        $('#start').addClass('fixed').parallax("50%", 0.4);
+        $('#bg-biljetter').addClass('fixed').parallax("50%", 0.4);
+        $('#bg-jobba').addClass('fixed').parallax("50%", 0.4);
+        $('#bg-kontakt').addClass('fixed').parallax("50%", 0.4);
+    }
 }
 
 $(function() {
