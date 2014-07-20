@@ -1,33 +1,3 @@
-// $(function() {
-//     function getHash() {
-//         return document.location.hash ? document.location.hash : '#start';
-//     }
-
-//     var current = getHash();
-
-//     function changePage(next) {
-//         if(current === next) {
-//             return false;
-//         }
-
-//         $(current).fadeOut('fast', function(){
-//             $(next).fadeIn('slow');
-//         });
-//         current = next;
-//     }
-//     $('.main article').addClass('invisible');
-
-//     $('nav a').click(function() {
-//         document.location.hash = '#' + $(this).attr('class');
-//     });
-
-//     $(window).hashchange(function(){
-//         changePage(getHash());
-//     });
-
-//     $(current).fadeIn('fast');
-// });
-
 var parallaxify = function() {
     if (!document.createTouch) {
         $('#start').addClass('fixed').parallax("50%", 0.4);
@@ -37,9 +7,36 @@ var parallaxify = function() {
     }
 }
 
+var scrollToElement = function() {
+    var href = $(this).attr('href');
+    var target = $(href);
+    var speed = 800;
+    var windowSize = jQuery(window).height();
+    var elementTop = jQuery(target).offset().top;
+    var elementSize = jQuery(target).innerHeight();
+    var destination;
+
+    history.pushState(null, null, href);
+    target.focus();
+
+    if(windowSize > elementSize) {
+        destination = elementTop - (windowSize - elementSize) / 2;
+    } else {
+        destination = elementTop;
+    }
+
+    $('html:not(:animated),body:not(:animated)').animate({
+        scrollTop: destination
+    }, speed);
+    return false;
+};
+
+
 $(function() {
     parallaxify();
     $(window).resize(parallaxify);
+
+    $('nav a,.smoothscroll').on('click', scrollToElement);
 });
 
 $(window).load(function() {

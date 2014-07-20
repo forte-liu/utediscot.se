@@ -34,7 +34,7 @@ a {
   text-decoration: none;
 }
 section.jumbotron .container {
-  padding: 40px;
+  padding: 40px 0;
 }
 section.jumbotron .container .logo {
   margin-left: auto;
@@ -109,7 +109,7 @@ aside#bg-biljetter {
   background-position: 60%;
 }
 aside#bg-jobba {
-  background-image: url("../../static/img/2.jpg");
+  background-image: url("../../static/img/3.jpg");
   background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,7 +119,7 @@ aside#bg-jobba {
   background-position: 80%;
 }
 aside#bg-kontakt {
-  background-image: url("../../static/img/3.jpg");
+  background-image: url("../../static/img/2.jpg");
   background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
