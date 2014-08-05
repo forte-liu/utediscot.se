@@ -19,7 +19,7 @@ aside {
 }
 img.logo {
   width: 400px;
-  height: 211px;
+  height: auto;
 }
 .invisible {
   display: none;
@@ -48,7 +48,6 @@ section.jumbotron .container nav {
   text-align: center;
 }
 section.jumbotron .container nav a {
-  padding: 0 40px;
   font-size: 24px;
   font-weight: 300;
   text-transform: uppercase;
