@@ -14,20 +14,6 @@ aside {
     margin-bottom: 60px;
 }
 
-.logos {
-    width: 924px;
-    margin: auto;
-    opacity: 0.8;
-
-    .left {
-        float: left;
-    }
-
-    .right {
-        float: right;
-    }
-}
-
 img.logo {
     width: 400px;
     height: auto;
@@ -152,5 +138,13 @@ footer {
     padding-top: 60px;
     padding-bottom: 40px;
     color: @offwhite;
+    opacity: 0.5;
 
+}
+
+@media (max-height: 700px) {
+    section#start {
+        padding: 70px 0 0;
+        height: 700px;
+    }
 }
