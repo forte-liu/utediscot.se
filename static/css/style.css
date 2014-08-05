@@ -17,11 +17,12 @@ aside {
 .logos .right {
   float: right;
 }
+img.logo {
+  width: 400px;
+  height: 211px;
+}
 .invisible {
   display: none;
-}
-a {
-  color: #000;
 }
 .facebook {
   background: no-repeat url("../img/facebook.png");
@@ -52,14 +53,13 @@ section.jumbotron .container nav a {
   font-weight: 300;
   text-transform: uppercase;
 }
-section.jumbotron .container nav a:hover {
-  color: #faa61a;
-}
-a {
+a,
+a:visited {
   color: #fff;
   text-decoration: none;
 }
-a:hover {
+a:hover,
+a:active {
   color: #faa61a;
 }
 h2 {
