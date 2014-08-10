@@ -13,15 +13,11 @@ img.logo {
 .invisible {
   display: none;
 }
-.facebook {
-  background: no-repeat url("../img/facebook.png");
-  height: 50px;
-  padding-left: 60px;
-  padding-top: 10px;
+.facebook .text {
   font-size: 1.2em;
 }
-.facebook a {
-  text-decoration: none;
+.facebook .fa {
+  vertical-align: bottom;
 }
 section.jumbotron .container {
   padding: 40px 0;
